@@ -2,7 +2,7 @@
      --first-font:
          "Roboto", sans-serif;
      --second-font:
-         "Ralewey", sans-serif;
+         "Raleway", sans-serif;
      --first-color: #FFFFFF;
      --second-color: #2F303A;
      --third-color: #F5F4FA;
@@ -80,6 +80,7 @@
 
  /* header */
  .logo {
+    font-family: var(--second-font);
      font-weight: 700;
      font-size: 26px;
      line-height: 1.2;
@@ -88,6 +89,7 @@
 
  .logo-first {
      color: var(--fifth-color);
+     font-family: var(--second-font);
  }
 
  .logo-head {
