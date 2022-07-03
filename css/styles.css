@@ -10,11 +10,13 @@
      --fifth-color: #2196F3;
      --sixth-color: #000000;
      --seventh-color: #757575;
-     /* --eighth-color:
-    rgba(255, 255, 255, 0.6); */
+     --eighth-color:rgba(255, 255, 255, 0.6); 
+     --nineth-color: #188CE8;
  }
 
  /* general styles */
+
+ 
 
  .link:focus,
  .link:hover {
@@ -25,9 +27,14 @@
  .btn-hero:hover,
  .btn-filter:focus,
  .btn-filter:hover {
-     background-color: var(--fifth-color);
+     background-color: var(--nineth-color);
      color: #FFFFFF;
  }
+
+.link-foot-col:focus,
+.link-foot-col:hover {
+    color: var(--first-color);
+}
 
  .com-title,
  .second-title,
@@ -47,10 +54,10 @@
      color: var(--seventh-color);
  }
 
+
+
  /* background-color */
- .btn-hero {
-     background-color: var(--fifth-color);
- }
+ 
 
  .hero-bg,
  .foot-bg {
@@ -66,7 +73,9 @@
      background-color: var(--first-color);
  }
 
-
+.btn-hero {
+    background-color: var(--fifth-color);
+}
 
  .link {
      text-decoration: none;
@@ -105,6 +114,11 @@
 
  .link-nav {
      color: var(--fourth-color);
+ }
+
+ .studio,
+ .portfolio {
+     color: var(--fifth-color);
  }
 
  /* hero-section */
