@@ -11,18 +11,21 @@
 			href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
 			rel="stylesheet"
 		/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"/>
 		<link rel="stylesheet" href="./css/styles.css" />
 	</head>
 	<header>
-		<nav>
+		<div class="container">
+			<nav class="main-nav">
 			<a class="logo logo-head" href="/">
 				<span class="logo-first">Web</span>Studio</a
 			>
-			<ul class="list">
+			<ul class="list header-list">
 				<li>
 					<a class="link link-header link-nav" href="./index.html"
-						>Студия</a
-					>
+						>
+						Студия
+						</a>
 				</li>
 				<li>
 					<a class="link link-header link-nav portfolio" href="./portfolio.html"
@@ -34,7 +37,7 @@
 				</li>
 			</ul>
 		</nav>
-		<ul class="list">
+		<ul class="list header-list-con">
 			<li>
 				<a
 					class="link link-header link-info"
@@ -48,12 +51,14 @@
 				>
 			</li>
 		</ul>
-	</header>
+	    </div>
+		</header>
 	<main>
-		<section>
-			<h1 class="hidden-filters-title">Портфолио</h1>
-			<ul class="list">
-				<li><button class="btn-filter btn-hero" type="button">Все</button></li>
+		<section class="cont-port">
+			<div class="container  container-vertical">
+			<h1 class="visually-hidden">Портфолио</h1>
+			<ul class="list filter-list">
+				<li><button class="btn-filter btn-hero-filter" type="button">Все</button></li>
 				<li>
 					<button class="btn-filter" type="button">Веб-сайты</button>
 				</li>
@@ -67,92 +72,94 @@
 					<button class="btn-filter" type="button">Маркетинг</button>
 				</li>
 			</ul>
-			<ul class="list">
-				<li>
+			<ul class="list list-product">
+				<li class="card-port">
 					<a href=""><img
 						src="./images/contant1.jpg"
 						alt="Веб-сайт на ноутбуке"
 						width="370"
 					/></a>
-					<h2 class="port-title">Технокряк</h2>
-					<p class="port-p">Веб-сайт</p>
+					<div class="port-info"><h2 class="port-title">Технокряк</h2>
+					<p class="port-p">Веб-сайт</p></div>
 				</li>
-				<li>
+				<li class="card-port">
 					<a href=""><img
 						src="./images/contant2.jpg"
 						alt="Дизайнерский постер"
 						width="370"
 					/></a>
-					<h2 class="port-title">Постер New Orlean vs Golden Star</h2>
-					<p class="port-p">Дизайн</p>
+					<div class="port-info"><h2 class="port-title">Постер New Orlean vs Golden Star</h2>
+					<p class="port-p">Дизайн</p></div>
 				</li>
-				<li>
+				<li class="card-port">
 					<a href=""><img
 						src="./images/contant3.jpg"
 						alt="Логотип ресторана"
 						width="370"
 					/></a>
-					<h2 class="port-title">Ресторан Seafood</h2>
-					<p class="port-p">Приложение</p>
+					<div class="port-info"><h2 class="port-title">Ресторан Seafood</h2>
+					<p class="port-p">Приложение</p></div>
 				</li>
-				<li>
+				<li class="card-port">
 					<a href=""><img
 						src="./images/contant4.jpg"
 						alt="Наушники"
 						width="370"
 					/></a>
-					<h2 class="port-title">Проект Prime</h2>
-					<p class="port-p">Маркетинг</p>
+					<div class="port-info"><h2 class="port-title">Проект Prime</h2>
+					<p class="port-p">Маркетинг</p></div>
 				</li>
-				<li>
+				<li class="card-port">
 					<a href=""><img
 						src="./images/contant5.jpg"
 						alt="Коробки"
 						width="370"
 					/></a>
-					<h2 class="port-title">Проект Boxes</h2>
-					<p class="port-p">Приложение</p>
+					<div class="port-info"><h2 class="port-title">Проект Boxes</h2>
+					<p class="port-p">Приложение</p></div>
 				</li>
-				<li>
+				<li class="card-port">
 					<a href=""><img
 						src="./images/contant6.jpg"
 						alt="Веб-сайт на мониторе"
 						width="370"
 					/></a>
-					<h2 class="port-title">Inspiration has no Borders</h2>
-					<p class="port-p">Веб-сайт</p>
+					<div class="port-info"><h2 class="port-title">Inspiration has no Borders</h2>
+					<p class="port-p">Веб-сайт</p></div>
 				</li>
-				<li>
+				<li class="card-port">
 					<a href=""><img
 						 src="./images/contant7.jpg" 
 						 alt="Книга"
 						  width="370" /></a>
-					<h2 class="port-title">Издание Limited Edition</h2>
-					<p class="port-p">Дизайн</p>
+					<div class="port-info"><h2 class="port-title">Издание Limited Edition</h2>
+					<p class="port-p">Дизайн</p></div>
 				</li>
-				<li>
+				<li class="card-port">
 					<a href=""><img
 						src="./images/contant8.jpg"
 						alt="Етикетка с названием компании"
 						width="370"
 					/></a>
-					<h2 class="port-title">Проект LAB</h2>
-					<p class="port-p">Маркетинг</p>
+					<div class="port-info"><h2 class="port-title">Проект LAB</h2>
+					<p class="port-p">Маркетинг</p></div>
 				</li>
-				<li>
+				<li class="card-port">
 					<a href=""></a><img
 						src="./images/contant9.jpg"
 						alt="Человек, работающий за ноутбуком"
 						width="370"
 					/></a>
-					<h2 class="port-title">Growing Business</h2>
-					<p class="port-p">Приложение</p>
+					<div class="port-info"><h2 class="port-title">Growing Business</h2>
+					<p class="port-p">Приложение</p></div>
 				</li>
 			</ul>
+			</div>
 		</section>
 	</main>
 
 	<footer class="foot-bg">
+			<div class="container container-vertical">
 		<a class="logo logo-foot" href="/"
 			><span class="logo-first">Web</span>Studio</a
 		>
@@ -160,15 +167,15 @@
 			<p class="ad-foot-col footer-info">
 				г. Киев, пр-т Леси Украинки, 26
 			</p>
-			<ul class="list">
-				<li>
+				<ul class="list ">
+				<li class="link-foot">
 					<a
 						class="link link-foot-col footer-info"
 						href="mailto:info@example.com"
 						>info@example.com</a
 					>
 				</li>
-				<li>
+				<li class="link-foot">
 					<a
 						class="link link-foot-col footer-info"
 						href="tel:+380991111111"
@@ -177,5 +184,6 @@
 				</li>
 			</ul>
 		</address>
-	</footer>
+		</div>
+		</footer>
 </html>
