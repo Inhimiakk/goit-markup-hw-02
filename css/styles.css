@@ -1,0 +1,215 @@
+/* Глобальні стилі */
+
+:root {
+    --main-font: 'Roboto', sans-serif;
+    --second-font: 'Raleway', sans-serif;
+    --black: #000000;
+    --navyblue: #2E2F42;
+    --slate: #434455;
+    --white: #FFF;
+    --iris: #4D5AE5;
+    --ocean: #404BBF;
+    --cloud: #F4F4FD;
+    --cornflower: #E7E9FC;
+    --box-shadow: rgba(0, 0, 0, 0.15);
+}
+
+body {
+    font-family: var(--main-font);
+    background-color: var(--white);
+    color: var(--navyblue);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover{
+    color: var(--ocean);
+}
+
+ul {
+    list-style: none;
+}
+
+.button-main
+.button-portfolio{
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.64px;
+}
+
+.logo {
+
+    font-family: var(--second-font);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 116%;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+
+}
+
+
+.logo:hover,
+.logo:focus{
+    color: var(--cloud);
+}
+
+.title {
+    color: var(--navyblue, );
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+}
+
+.hidden-element {
+    visibility: hidden;
+}
+
+/*Header*/
+
+.header{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+}
+
+.header-address{
+    font-style: normal;
+    color: var(--slate);
+    font-weight: 400;
+}
+
+
+.logo-first{
+    color: var(--iris);
+}
+
+.logo-head:hover,
+.logo-head:focus{
+    color: var(--navyblue);
+}
+
+/*Hero*/
+
+
+.hero{
+    background-color: var(--navyblue);
+}
+
+.hero-title {
+    text-align: center;
+    color: var(--white);
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 1.12px;
+}
+
+.button-main{
+    background-color: var(--iris);
+    color: var(--white, );
+}
+
+.button-main:hover,
+.button-main:focus{
+    background-color:var(--ocean);
+}
+
+/*Advantages*/
+
+
+.Advantages-h,
+.card-h {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+}
+
+.Advantages-p,
+.card-p {
+    color: var(--slate);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+}
+
+
+
+/*Our Team*/
+
+.team {
+    background-color: var(--cloud);
+}
+
+.team-card{
+    background-color: var(--white);
+}
+
+.team-name{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+}
+
+.team-front{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+}
+
+/*Footer*/
+
+footer{
+    background-color: var(--navyblue);
+    color: var(--cloud);
+}
+
+.footer{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+}
+
+/*portfolio*/
+
+.button-portfolio{
+    border-radius: 4px;
+    border: 1px solid var(--cornflower);
+    background: var(--cloud);
+    color: var(--iris);
+}
+
+.button-portfolio:hover,
+.button-portfolio:focus {
+    border-radius: 4px;
+    background: var(--iris,);
+    box-shadow: 0px 4px 4px 0px var(--box-shadow);
+    color: var(--white);
+}
+
+.portfolio-card{
+    border: 1px solid var(--cornflower)
+}
+
+.portfolio-card-a:hover,
+.portfolio-card-a:focus{
+    color: var(--navyblue);
+}
+
+.header-portfolio{
+    border-bottom: 1px solid var(--cornflower);
+}
