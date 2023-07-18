@@ -17,19 +17,20 @@
 body {
     font-family: var(--main-font);
     background-color: var(--white);
-    color: var(--navyblue);
+    color: var(--slate), #434455;
 }
 
-a {
+.link {
     text-decoration: none;
     color: inherit;
 }
 
-a:hover{
+.link:hover,
+.link:focus{
     color: var(--ocean);
 }
 
-ul {
+.list {
     list-style: none;
 }
 
@@ -44,24 +45,19 @@ ul {
 }
 
 .logo {
-
+    color: var(--iris);
     font-family: var(--second-font);
     font-weight: 800;
     font-size: 18px;
-    line-height: 116%;
+    line-height: 1.17;
     letter-spacing: 0.54px;
     text-transform: uppercase;
 
 }
 
 
-.logo:hover,
-.logo:focus{
-    color: var(--cloud);
-}
-
 .title {
-    color: var(--navyblue, );
+    color: var(--navyblue);
     text-align: center;
     font-size: 36px;
     font-weight: 700;
@@ -90,7 +86,11 @@ ul {
 
 
 .logo-first{
-    color: var(--iris);
+    color: var(--navyblue);
+}
+
+.logo-second{
+    color: var(--cloud)
 }
 
 .logo-head:hover,
@@ -127,17 +127,19 @@ ul {
 /*Advantages*/
 
 
-.Advantages-h,
-.card-h {
+.advantages-h,
+.card-h,
+.team-name{
+    color:var(--navyblue);
     font-size: 20px;
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.4px;
 }
 
-.Advantages-p,
-.card-p {
-    color: var(--slate);
+.advantages-p,
+.card-p,
+.team-front {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -154,20 +156,6 @@ ul {
 
 .team-card{
     background-color: var(--white);
-}
-
-.team-name{
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.4px;
-}
-
-.team-front{
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.32px;
 }
 
 /*Footer*/
@@ -195,21 +183,11 @@ footer{
 
 .button-portfolio:hover,
 .button-portfolio:focus {
-    border-radius: 4px;
     background: var(--iris,);
-    box-shadow: 0px 4px 4px 0px var(--box-shadow);
     color: var(--white);
-}
-
-.portfolio-card{
-    border: 1px solid var(--cornflower)
 }
 
 .portfolio-card-a:hover,
 .portfolio-card-a:focus{
     color: var(--navyblue);
-}
-
-.header-portfolio{
-    border-bottom: 1px solid var(--cornflower);
 }
