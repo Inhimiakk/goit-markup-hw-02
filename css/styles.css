@@ -11,13 +11,12 @@
     --ocean: #404BBF;
     --cloud: #F4F4FD;
     --cornflower: #E7E9FC;
-    --box-shadow: rgba(0, 0, 0, 0.15);
 }
 
 body {
     font-family: var(--main-font);
     background-color: var(--white);
-    color: var(--slate), #434455;
+    color: var(--slate);
 }
 
 .link {
@@ -34,15 +33,22 @@ body {
     list-style: none;
 }
 
-.button-main
-.button-portfolio{
-    font-family: Roboto;
+.button{
+    font-family: var(--main-font), 'sans-serif';
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 1.5;
     letter-spacing: 0.64px;
+    cursor: pointer;
 }
+
+.button:hover,
+.button:focus {
+    background: var(--ocean);
+    color: var(--white);
+}
+
 
 .logo {
     color: var(--iris);
@@ -52,17 +58,21 @@ body {
     line-height: 1.17;
     letter-spacing: 0.54px;
     text-transform: uppercase;
-
 }
 
+.logo:hover,
+.logo:focus{
+    color: var(--iris);
+}
 
 .title {
     color: var(--navyblue);
     text-align: center;
     font-size: 36px;
     font-weight: 700;
-    line-height: 40px;
+    line-height: 1.11;
     letter-spacing: 0.72px;
+    text-transform: capitalize;
 }
 
 .hidden-element {
@@ -93,9 +103,9 @@ body {
     color: var(--cloud)
 }
 
-.logo-head:hover,
-.logo-head:focus{
-    color: var(--navyblue);
+
+.contacts{
+    font-style: normal;
 }
 
 /*Hero*/
@@ -110,7 +120,7 @@ body {
     color: var(--white);
     font-size: 56px;
     font-weight: 700;
-    line-height: 60px;
+    line-height: 1.07;
     letter-spacing: 1.12px;
 }
 
@@ -119,10 +129,6 @@ body {
     color: var(--white, );
 }
 
-.button-main:hover,
-.button-main:focus{
-    background-color:var(--ocean);
-}
 
 /*Advantages*/
 
@@ -133,20 +139,19 @@ body {
     color:var(--navyblue);
     font-size: 20px;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 1.2;
     letter-spacing: 0.4px;
 }
 
 .advantages-p,
 .card-p,
 .team-front {
+    color: var(--slate);
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.32px;
 }
-
-
 
 /*Our Team*/
 
@@ -160,12 +165,12 @@ body {
 
 /*Footer*/
 
-footer{
+.footer{
     background-color: var(--navyblue);
     color: var(--cloud);
 }
 
-.footer{
+.footer-p{
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -175,19 +180,7 @@ footer{
 /*portfolio*/
 
 .button-portfolio{
-    border-radius: 4px;
-    border: 1px solid var(--cornflower);
     background: var(--cloud);
     color: var(--iris);
 }
 
-.button-portfolio:hover,
-.button-portfolio:focus {
-    background: var(--iris,);
-    color: var(--white);
-}
-
-.portfolio-card-a:hover,
-.portfolio-card-a:focus{
-    color: var(--navyblue);
-}
